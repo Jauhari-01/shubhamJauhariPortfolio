@@ -14,12 +14,13 @@ const About = () => {
                         <img src={ME} alt="About Image" />
                     </div>
                 </div>
-                <div className="about__content">
+                <ul className="about__content">
                     {aboutMeContent.map((ele,ind)=>(
-                        <p>{ele.content}</p>
+                        <li key={ind}>{ele.content}</li>
                     ))}
-                    <button className="btn btn-primary">Let's Talk</button>
-                </div>
+                    <a href="#contact" className="btn btn-primary">Let's Talk</a>
+                </ul>
+                
                 
             </div>
 

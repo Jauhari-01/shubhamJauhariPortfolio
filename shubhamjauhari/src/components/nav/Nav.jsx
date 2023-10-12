@@ -12,7 +12,7 @@ const  Nav=()=>{
         <nav>
             <a href="#" onClick={()=>setActive('#')} className={active==='#'?'active':''}><LiaHomeSolid /></a>
             <a href="#about"  onClick={()=>setActive('#about')} className={active==='#about'?'active':''}><BiBookHeart /></a>
-            <a href="#service"  onClick={()=>setActive('#service')} className={active==='#service'?'active':''}><FaHandsHelping /></a>
+            <a href="#experience"  onClick={()=>setActive('#experience')} className={active==='#experience'?'active':''}><FaHandsHelping /></a>
             <a href="#portfolio"  onClick={()=>setActive('#portfolio')} className={active==='#portfolio'?'active':''}><SiCodeproject /></a>
             <a href="#contact"  onClick={()=>setActive('#contact')} className={active==='#contact'?'active':''}><MdContacts /></a>
         </nav>       

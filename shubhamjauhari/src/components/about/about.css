@@ -1,7 +1,7 @@
 .about__container{
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    grid-template-columns: 35% 70%;
+    gap: 30px;
 }
 
 .about__me{
@@ -14,7 +14,7 @@
         var(--color-primary),
         transparent
     );
-    display: grid;
+    /* display: grid; */
     place-items: center;
 }
 
@@ -29,9 +29,19 @@
     transform: rotate(0);
 }
 
-.about__content p{
-    margin: 2rem 0 ;
-    line-height: 1.2rem;
+.about__content{
+    background: var(--color-primary);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    padding-left: 3rem;
+}
+.about__content:hover{
+    background: transparent;
+    border: 1px solid var(--color-primary);
+}
+.about__content li{
+    margin: 1rem 0 ;
+    list-style-type: square;
 }
 
 /* Responsive design media queries(medium devices) */
@@ -56,10 +66,7 @@
         width: 65%;
         margin: 0 auto 3rem;
     }
-    .about__content{
-        text-align: center;
-    }
-    .about__content p{
+    .about__content li{
         margin: 1.5rem;
     }
 }
